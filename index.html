@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Data Dynamo 2.0 – 24-Hour National Hackathon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Custom cursor elements -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <div class="noise"></div>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="nav">
+      <div class="nav-left">
+        <div class="logo-circle">DD</div>
+        <div>
+          <div class="site-title">Data Dynamo 2.0</div>
+          <div class="site-sub">24-Hour National Hackathon · Anurag University</div>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#tracks">Domains</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#faq">FAQ</a>
+        <button class="primary-btn" id="register-scroll">
+          Register Now
+          <span class="arrow">↗</span>
+        </button>
+        <img id="au-logo" src="C:\Users\DS\Downloads\Logo_Anurag_University.svg.png" alt="Anurag University logo" width="150">
+
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-left reveal">
+        <div class="hero-badge-row">
+          <div class="hero-pill">
+            <span class="hero-pill-dot"></span>
+            Registrations Open • Limited Slots
+          </div>
+          <div class="hero-pill">24-Hour Offline Hackathon</div>
+        </div>
+
+        <h1 class="hero-title">
+          Build, innovate & deploy at
+          <span class="highlight">Data Dynamo&nbsp;2.0</span>.
+        </h1>
+
+        <p class="hero-subtitle">
+          A 24-hour national-level hackathon hosted by the Department of Data Science, Anurag University.
+          Collaborate with developers, designers, and innovators to ship working solutions overnight.
+        </p>
+
+        <div class="hero-meta">
+          <div class="meta-pill">
+            <span class="meta-dot"></span>
+            <span class="meta-label">Date:</span> 30–31 January 2026
+          </div>
+          <div class="meta-pill">
+            <span class="meta-label">Venue:</span> Anurag University, Hyderabad
+          </div>
+          <div class="meta-pill">
+            <span class="meta-label">Team Size:</span> 1–4 members · ₹600 / student
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <button class="primary-btn" id="apply-team">
+            Apply as a Team
+            <span class="arrow">🚀</span>
+          </button>
+          <a href="#tracks" class="secondary-link">
+            Explore domains
+            <span class="icon">➜</span>
+          </a>
+        </div>
+
+        <div class="hero-footer">
+          <div><strong>Organized by:</strong> Department of Data Science, Anurag University</div>
+          <div><strong>In collaboration with:</strong> IEEE CIS Chapter, Datum Club, Data Analytics Club</div>
+          <div><strong>Community partner:</strong> Indian Data Club</div>
+        </div>
+      </div>
+
+      <div class="hero-right reveal">
+        <div class="glass-panel">
+          <div class="shine"></div>
+          <div class="panel-orbit"></div>
+
+          <div class="panel-header">
+            <div>
+              <div class="panel-title">Countdown to hackathon</div>
+              <div class="timezone" style="font-size:0.75rem;color:var(--text-muted);">Hyderabad · IST (UTC+5:30)</div>
+            </div>
+            <div class="panel-chip">
+              <span class="dot-live"></span> Live timer
+            </div>
+          </div>
+
+          <!-- TIME BAR -->
+          <div class="timebar">
+            <div class="timebar-head">
+              <span>Time remaining to start the hackathon</span>
+              <span class="timebar-label" id="timebar-label">--</span>
+            </div>
+            <div class="timebar-track">
+              <div class="timebar-fill" id="timebar-fill"></div>
+            </div>
+          </div>
+
+          <!-- BOXED COUNTDOWN -->
+          <div class="countdown" id="countdown">
+            <div class="time-box">
+              <div class="time-number" data-unit="days">00</div>
+              <div class="time-label">Days</div>
+            </div>
+            <div class="time-box">
+              <div class="time-number" data-unit="hours">00</div>
+              <div class="time-label">Hours</div>
+            </div>
+            <div class="time-box">
+              <div class="time-number" data-unit="minutes">00</div>
+              <div class="time-label">Minutes</div>
+            </div>
+            <div class="time-box">
+              <div class="time-number" data-unit="seconds">00</div>
+              <div class="time-label">Seconds</div>
+            </div>
+          </div>
+
+          <div class="timeline-mini">
+            <div class="timeline-row">
+              <div>
+                <div class="timeline-label">Check-in & Briefing</div>
+                <div class="timeline-meta">30 Jan · 9:00 AM</div>
+              </div>
+              <div>🪪 Verification</div>
+            </div>
+            <div class="timeline-row">
+              <div>
+                <div class="timeline-label">Hack Hours</div>
+                <div class="timeline-meta">30 Jan · 11:00 AM – 31 Jan · 11:00 AM</div>
+              </div>
+              <div>💻 Build & iterate</div>
+            </div>
+            <div class="timeline-row">
+              <div>
+                <div class="timeline-label">Demos & Prizes</div>
+                <div class="timeline-meta">31 Jan · 2:00 PM onwards</div>
+              </div>
+              <div>🏆 Jury panel</div>
+            </div>
+          </div>
+
+          <div class="panel-footer">
+            <div class="pill-tag"><span class="icon">👥</span> Team size: 1–4 members</div>
+            <div>Registration fee: ₹600 per student · Prize pool ₹1,50,000</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section id="about" class="reveal">
+      <div class="section-header">
+        <div class="section-eyebrow">Why join Data Dynamo 2.0?</div>
+        <h2 class="section-title">Code, collaborate, and create impact.</h2>
+        <p class="section-subtitle">
+          Data Dynamo 2.0 brings together developers, designers, hardware enthusiasts, and data scientists
+          to build end-to-end solutions across multiple domains in just 24 hours.
+        </p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value" data-count="400">0</div>
+          <div class="stat-label">+ participants expected</div>
+          <div class="stat-pill"><span class="stat-pill-dot"></span> From diverse colleges & domains</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" data-count="7">0</div>
+          <div class="stat-label">hackathon domains</div>
+          <div class="stat-pill"><span class="stat-pill-dot"></span> Software, hardware & AI tracks</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" data-count="150000">0</div>
+          <div class="stat-label">total prize pool (INR)</div>
+          <div class="stat-pill"><span class="stat-pill-dot"></span> Cash prizes, goodies & recognition</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOMAINS -->
+    <section id="tracks" class="reveal">
+      <div class="section-header">
+        <div class="section-eyebrow">Domains</div>
+        <h2 class="section-title">Choose your problem space.</h2>
+        <p class="section-subtitle">
+          Teams can pick any one of the following domains and build a solution that showcases their creativity,
+          technical depth, and real-world impact.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <!-- track cards (same content as original) -->
+        <div class="track-card">
+          <div class="track-tag"><span>🌐</span> Web / Mobile Development</div>
+          <div class="track-title">Full-stack & mobile experiences</div>
+          <div class="track-desc">Build responsive web apps, PWAs, or mobile applications that solve real user problems with clean UI/UX and scalable backends.</div>
+          <div class="track-footer"><span class="muted">Ideal for: Web, Android, iOS</span><span>Frontend · Backend</span></div>
+        </div>
+
+        <div class="track-card">
+          <div class="track-tag"><span>📡</span> Internet of Things (IoT)</div>
+          <div class="track-title">Smart, connected systems</div>
+          <div class="track-desc">Use sensors, microcontrollers, and cloud platforms to create IoT solutions for automation, monitoring, or smart infrastructure.</div>
+          <div class="track-footer"><span class="muted">Ideal for: Hardware, Embedded</span><span>Edge · Cloud</span></div>
+        </div>
+
+        <div class="track-card">
+          <div class="track-tag"><span>🕶️</span> AR / VR & Metaverse</div>
+          <div class="track-title">Immersive digital worlds</div>
+          <div class="track-desc">Design AR/VR experiences, simulations, or metaverse environments that enhance learning, gaming, or collaboration.</div>
+          <div class="track-footer"><span class="muted">Ideal for: Unity, Unreal, XR</span><span>Immersion · UX</span></div>
+        </div>
+
+        <div class="track-card">
+          <div class="track-tag"><span>🛡️</span> Cybersecurity / Blockchain</div>
+          <div class="track-title">Secure & trusted systems</div>
+          <div class="track-desc">Work on security tools, threat detection, secure authentication, or blockchain-based transparency and trust solutions.</div>
+          <div class="track-footer"><span class="muted">Ideal for: Security, Web3</span><span>Security · Trust</span></div>
+        </div>
+
+        <div class="track-card">
+          <div class="track-tag"><span>📊</span> Data Analytics</div>
+          <div class="track-title">Insights from data</div>
+          <div class="track-desc">Use dashboards, visualizations, and analytics pipelines to uncover patterns and support data-driven decision making.</div>
+          <div class="track-footer"><span class="muted">Ideal for: BI, Analytics</span><span>Dashboards · ETL</span></div>
+        </div>
+
+        <div class="track-card">
+          <div class="track-tag"><span>🤖</span> AI / ML / GenAI / LLMs</div>
+          <div class="track-title">Intelligent systems & copilots</div>
+          <div class="track-desc">Build ML models, GenAI apps, or LLM-based assistants tailored for education, BFSI, health, productivity, and more.</div>
+          <div class="track-footer"><span class="muted">Ideal for: ML, GenAI</span><span>Models · Agents</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHEDULE + PRIZES -->
+    <section id="schedule" class="reveal">
+      <div class="two-col">
+        <div>
+          <div class="section-header">
+            <div class="section-eyebrow">Schedule</div>
+            <h2 class="section-title">A focused 24-hour sprint.</h2>
+            <p class="section-subtitle">Expect immersive build time, mentor check-ins, and enough energy to keep you shipping all night.</p>
+          </div>
+
+          <div class="timeline-list">
+            <div class="timeline-item">
+              <div class="timeline-time">09:00</div>
+              <div>
+                <div class="timeline-content-title">Check-in & verification</div>
+                <div class="timeline-content-sub">Team registration, ID verification, and workspace allocation.</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">10:00</div>
+              <div>
+                <div class="timeline-content-title">Inauguration & briefing</div>
+                <div class="timeline-content-sub">Opening ceremony, rules, judging criteria, and domain clarifications.</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">11:00</div>
+              <div>
+                <div class="timeline-content-title">Hack starts</div>
+                <div class="timeline-content-sub">24 hours of coding, building, testing, and refining your solutions.</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">23:00</div>
+              <div>
+                <div class="timeline-content-title">Code freeze</div>
+                <div class="timeline-content-sub">Submissions close; teams prepare demos and presentations.</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">Next day</div>
+              <div>
+                <div class="timeline-content-title">Demos, jury & valedictory</div>
+                <div class="timeline-content-sub">Top teams pitch to the jury, followed by prize distribution.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-header" style="margin-bottom:1rem;">
+            <div class="section-eyebrow">Prize Pool</div>
+            <h2 class="section-title">₹1,50,000 in prizes & recognition.</h2>
+          </div>
+
+          <div class="prizes-card">
+            <div class="prize-badge"><span>🏆</span> Cash, goodies & certificates</div>
+            <div class="prize-total">Prize Pool: ₹1,50,000</div>
+            <div class="prize-note">Along with cash prizes and goodies, winning and standout teams gain recognition from the Department of Data Science, IEEE CIS Chapter, Datum Club, Data Analytics Club, and Indian Data Club.</div>
+
+            <div class="prize-list">
+              <div class="prize-row"><div class="prize-rank"><span class="rank-dot"></span><span>Overall Winners</span></div><div class="prize-amount">Top 3 teams</div></div>
+              <div class="prize-row"><div class="prize-rank"><span class="rank-dot" style="background:#22c55e;"></span><span>Best Domain-wise Projects</span></div><div class="prize-amount">Domain excellence awards</div></div>
+              <div class="prize-row"><div class="prize-rank"><span class="rank-dot" style="background:#38bdf8;"></span><span>Special Recognitions</span></div><div class="prize-amount">Innovation & impact</div></div>
+              <div class="prize-row"><div class="prize-rank"><span class="rank-dot" style="background:#a855f7;"></span><span>Goodies & Swag</span></div><div class="prize-amount">For standout teams & contributors</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ + REGISTER -->
+    <section id="faq" class="reveal">
+      <div class="two-col">
+        <div>
+          <div class="section-header">
+            <div class="section-eyebrow">FAQ</div>
+            <h2 class="section-title">Good to know before you apply.</h2>
+          </div>
+
+          <div class="faq-list" id="faq-list">
+            <div class="faq-item">
+              <div class="faq-question"><span>Who can participate?</span><div class="faq-toggle">+</div></div>
+              <div class="faq-answer">Data Dynamo 2.0 is open to students from any department and college. Whether you are into coding, design, hardware, or data, you’re welcome to participate.</div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question"><span>What is the team size and fee?</span><div class="faq-toggle">+</div></div>
+              <div class="faq-answer">Team size is 1–4 members. The registration fee is ₹600 per student, payable during registration as per the instructions provided on the form.</div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question"><span>Do we need to bring our own laptops?</span><div class="faq-toggle">+</div></div>
+              <div class="faq-answer">Yes, teams must bring their own laptops, chargers, and necessary hardware components (if applicable). Internet and power arrangements will be available at the venue.</div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question"><span>Will food & overnight stay be arranged?</span><div class="faq-toggle">+</div></div>
+              <div class="faq-answer">Basic overnight arrangements along with refreshments and meals will be provided to participants for the duration of the hackathon.</div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question"><span>How will teams be judged?</span><div class="faq-toggle">+</div></div>
+              <div class="faq-answer">Projects will be evaluated based on problem understanding, innovation, technical implementation, impact, and quality of the final demo and presentation.</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="register">
+          <div class="section-header">
+            <div class="section-eyebrow">Registration</div>
+            <h2 class="section-title">Register your team for Data Dynamo 2.0.</h2>
+            <p class="section-subtitle">Use the official registration form linked below to submit your team details.</p>
+          </div>
+
+          <div class="prizes-card">
+            <p style="font-size:0.85rem; margin-bottom:0.8rem;">
+              Click the button below to open the official registration form. Ensure that team name, member details,
+              and contact numbers are entered correctly. The registration fee is ₹600 per student.
+            </p>
+            <button class="primary-btn register-btn" style="width:100%; justify-content:center;">
+              Open Registration Form
+              <span class="arrow">↗</span>
+            </button>
+            <p style="font-size:0.8rem; color:var(--text-muted); margin-top:0.7rem;">
+              You will receive an acknowledgement once your response is recorded. For any corrections or
+              team changes after registration, please reach out to the coordinators listed below.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT COORDINATORS -->
+    <section id="contact" class="reveal">
+      <div class="section-header">
+        <div class="section-eyebrow">Contact</div>
+        <h2 class="section-title">Coordinators & Program Chair.</h2>
+        <p class="section-subtitle">For queries related to registration, domains, logistics, or any other details, feel free to reach out to the student or faculty coordinators.</p>
+      </div>
+
+      <div class="two-col">
+        <div class="faq-list">
+          <div style="font-size:0.9rem; font-weight:500; margin-bottom:0.4rem;">Student Coordinators</div>
+          <p style="font-size:0.85rem; margin-bottom:0.3rem;"><strong>Hassan Ahmed</strong><br/>📞 9959167096</p>
+          <p style="font-size:0.85rem; margin-bottom:0.3rem;"><strong>Harshith</strong><br/>📞 8125579667</p>
+          <p style="font-size:0.85rem;"><strong>G. Gourav Kumar</strong><br/>📞 9676473925</p>
+        </div>
+
+        <div class="faq-list">
+          <div style="font-size:0.9rem; font-weight:500; margin-bottom:0.4rem;">Faculty Coordinators & Program Chair</div>
+          <p style="font-size:0.85rem; margin-bottom:0.3rem;"><strong>Faculty Coordinators</strong><br/>Ms. B. Jyothi<br/>Mr. Salar Mohammad<br/>Dr. V. Biksham</p>
+          <p style="font-size:0.85rem;"><strong>Program Chair</strong><br/>Dr. M. Sridevi<br/>Head, Department of Data Science<br/>Anurag University</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-text">
+        <div><strong>Note:</strong> To make any changes to your team after registration, please contact the coordinators.</div>
+        <div>© 2026 Data Dynamo 2.0 - Anurag University | Department of Data Science</div>
+        <div>Organized by Department of Data Science in collaboration with IEEE CIS Chapter, Datum Club, and Data Analytics Club.</div>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Back to top ↑</a>
+        <a href="#tracks">Domains</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
